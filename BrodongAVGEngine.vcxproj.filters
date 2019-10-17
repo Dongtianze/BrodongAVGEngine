@@ -21,9 +21,15 @@
     <ClCompile Include="Page.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Page.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,11 @@
+_SETTEXT This is index.txt
+_ENDPAGE
+_SETTEXT This is Page1
+_ENDPAGE
+_SETTEXT This is Page2
+_ENDPAGE
+_SETTEXT This is Page3
+_ENDPAGE
+_SETTEXT This is Page4
+_ENDPAGE
+_ENDGAME
