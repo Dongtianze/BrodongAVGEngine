@@ -6,17 +6,18 @@
 void Chapter::setChapterName(char* name)
 {
 	this->pageCount = 0;
-	strcpy_s(this->chapterName, 1024, name);
+	strcpy_s(this->chapterName, 512, name);
 }
 
 void Chapter::getChapterinfo()
 {
-	
-	char filePlace[1024] = "Data/Chapters/";
-	strcat_s(filePlace, 1024, this->chapterName);
-	fopen_s(&(this->chapterFile), filePlace, "w");
+	char filePlace[512] = "Data/Chapters/";
+	strcat_s(filePlace, 512, this->chapterName);
+	fopen_s(&(this->chapterFile), filePlace, "r");
 	char order[16] = "0";
-	while (1)
+	//if(this->chapterFile!=NULL)
+	//fseek(this->chapterFile, 0, SEEK_SET);
+	while (this->chapterFile != NULL )
 	{
 		fscanf_s(this->chapterFile, "%s", order, 16);
 		if (order == "_SETTEXT")

@@ -4,8 +4,8 @@
 class Chapter
 {
 private:
-	char chapterName[1024];
-	Page pages[1024];
+	char chapterName[512];
+	Page pages[128];
 	int pageCount = 0;
 	char order[16]="0";
 public:

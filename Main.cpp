@@ -3,8 +3,8 @@
 #include"Page.h"
 #include"Chapter.h"
 
-#define WINDOW_WIDTH 480
-#define WINDOW_HEIGHT 640
+#define WINDOW_WIDTH 640
+#define WINDOW_HEIGHT 480
 /*
 Brodong's AVG engine
 
@@ -49,13 +49,13 @@ Brodong's AVG engine
 		2)	_OPTIONS (option 1 text) (option 1 goto chapter) (option 2 text) (option 2 goto chapter) ......(option n text) (option n goto chapter) : give few options and goto selected chapter;
 		3)	_GOTOCHP (chapter name) : goto the chapter through name;
 */
-char indexChapterName[1024] = "Data/Chapters/index.txt";
-char resultString[1024] = "END";
+char indexChapterName[512] = "index.txt";
+char resultString[512] = "_ENDGAME";
+Chapter nowChapter;
 int main()
 {
 	
 	initgraph(WINDOW_WIDTH, WINDOW_HEIGHT);
-	Chapter nowChapter;
 	
 	nowChapter.setChapterName(indexChapterName);
 	while (1)
